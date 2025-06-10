@@ -1,0 +1,118 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+.mbti-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.selection {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.scenario-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center; /* 確保結果欄位內容置中 */
+}
+
+#result-image-container {
+    margin-top: 10px;
+    text-align: center; /* 置中容器 */
+}
+
+#result-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    display: none;
+    margin: 0 auto; /* 圖片本身置中 */
+}
+
+/* E人風格：活潑鮮艷 */
+.e-person {
+    background: linear-gradient(135deg, #ff6f61, #ffb347);
+    color: #fff;
+}
+
+.e-person .scenario-btn {
+    background-color: #ffeb3b;
+    color: #333;
+}
+
+.e-person .scenario-btn:hover {
+    background-color: #fbc02d;
+}
+
+/* I人風格：單調素雅 */
+.i-person {
+    background-color: #e0e7e9;
+    color: #333;
+}
+
+.i-person .scenario-btn {
+    background-color: #b0bec5;
+    color: #fff;
+}
+
+.i-person .scenario-btn:hover {
+    background-color: #90a4ae;
+}
+
+.result.e-result {
+    background-color: #fff176;
+    color: #333;
+}
+
+.result.i-result {
+    background-color: #eceff1;
+    color: #333;
+}
